@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta name="theme-color" content="#061326">
+
+  <title>Factory Direct | Wholesale Partners</title>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(
+          circle at 20% 10%,
+          rgba(0, 194, 255, 0.08),
+          transparent 28%
+        ),
+        radial-gradient(
+          circle at 80% 20%,
+          rgba(0, 194, 255, 0.06),
+          transparent 24%
+        ),
+        #050d1b;
+
+      color: #f7fbff;
+
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+    }
+
+
+    /* =========================
+       PAGE
+    ========================= */
+
+    .page {
+
+      width: 100%;
+
+      max-width: 980px;
+
+      margin: 0 auto;
+
+      padding: 34px 20px 60px;
+    }
+
+
+    /* =========================
+       BRAND
+    ========================= */
+
+    .brand {
+
+      text-align: center;
+
+      font-size: 17px;
+
+      font-weight: 800;
+
+      line-height: 1.15;
+
+      margin-bottom: 28px;
+
+      letter-spacing: 0.2px;
+    }
+
+    .brand span {
+
+      color: #19c7ef;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+
+      text-align: center;
+    }
+
+    .eyebrow {
+
+      display: inline-block;
+
+      margin-bottom: 14px;
+
+      padding: 7px 14px;
+
+      border:
+        1px solid
+        rgba(25, 199, 239, 0.35);
+
+      border-radius: 999px;
+
+      color: #19c7ef;
+
+      font-size: 12px;
+
+      font-weight: 800;
+
+      letter-spacing: 1.4px;
+    }
+
+
+    h1 {
+
+      margin: 0;
+
+      font-size: clamp(40px, 7vw, 76px);
+
+      line-height: 0.98;
+
+      font-weight: 900;
+
+      letter-spacing: -2.5px;
+
+      text-transform: uppercase;
+    }
+
+    h1 span {
+
+      color: #19c7ef;
+    }
+
+
+    .subtitle {
+
+      max-width: 720px;
+
+      margin: 22px auto 0;
+
+      color: #cbd6e4;
+
+      font-size: 18px;
+
+      line-height: 1.65;
+    }
+
+
+    /* =========================
+       FACTORY FEATURES
+    ========================= */
+
+    .proofs {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 12px;
+
+      max-width: 820px;
+
+      margin: 28px auto 0;
+    }
+
+
+    .proof {
+
+      padding: 15px 12px;
+
+      border:
+        1px solid
+        rgba(25, 199, 239, 0.18);
+
+      border-radius: 12px;
+
+      background:
+        rgba(255, 255, 255, 0.025);
+
+      color: #e8f2fb;
+
+      font-size: 14px;
+
+      font-weight: 700;
+    }
+
+
+    .proof strong {
+
+      display: block;
+
+      color: #19c7ef;
+
+      font-size: 18px;
+
+      margin-bottom: 4px;
+    }
+
+
+    /* =========================
+       GENERAL SECTION
+    ========================= */
+
+    .section {
+
+      margin-top: 38px;
+
+      padding: 26px;
+
+      border:
+        1px solid
+        rgba(25, 199, 239, 0.30);
+
+      border-radius: 18px;
+
+      background:
+        rgba(5, 19, 36, 0.72);
+
+      box-shadow:
+        0 18px 50px
+        rgba(0, 0, 0, 0.18);
+    }
+
+
+    .section-title {
+
+      text-align: center;
+
+      margin: 0 0 7px;
+
+      font-size: 26px;
+
+      font-weight: 900;
+    }
+
+
+    .section-desc {
+
+      text-align: center;
+
+      margin: 0 auto 22px;
+
+      max-width: 700px;
+
+      color: #9eacbd;
+
+      font-size: 14px;
+
+      line-height: 1.6;
+    }
+
+
+    /* =========================
+       PARTNER INCENTIVE
+    ========================= */
+
+    .tiers {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap: 10px;
+    }
+
+
+    .tier {
+
+      padding: 18px 12px;
+
+      border-radius: 12px;
+
+      background:
+        rgba(255, 255, 255, 0.035);
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+
+      text-align: center;
+    }
+
+
+    .tier .qty {
+
+      font-size: 15px;
+
+      font-weight: 800;
+
+      color: #ffffff;
+    }
+
+
+    .tier .bonus {
+
+      margin-top: 8px;
+
+      color: #19c7ef;
+
+      font-size: 21px;
+
+      font-weight: 900;
+    }
+
+
+    .example {
+
+      margin: 18px auto 0;
+
+      max-width: 780px;
+
+      padding: 16px 18px;
+
+      border-radius: 12px;
+
+      background:
+        rgba(25, 199, 239, 0.06);
+
+      color: #cbd6e4;
+
+      font-size: 14px;
+
+      line-height: 1.65;
+
+      text-align: center;
+    }
+
+
+    /* =========================
+       FORM
+    ========================= */
+
+    .form-section {
+
+      margin-top: 38px;
+    }
+
+
+    form {
+
+      display: grid;
+
+      gap: 15px;
+
+      max-width: 650px;
+
+      margin: 0 auto;
+    }
+
+
+    label {
+
+      display: block;
+
+      margin-bottom: 7px;
+
+      color: #eaf2fa;
+
+      font-size: 14px;
+
+      font-weight: 700;
+    }
+
+
+    input,
+    select {
+
+      width: 100%;
+
+      height: 52px;
+
+      border:
+        1px solid
+        #2b3c51;
+
+      border-radius: 10px;
+
+      outline: none;
+
+      padding: 0 15px;
+
+      background: #0b1829;
+
+      color: #ffffff;
+
+      font-size: 16px;
+    }
+
+
+    input::placeholder {
+
+      color: #64758a;
+    }
+
+
+    input:focus,
+    select:focus {
+
+      border-color: #19c7ef;
+
+      box-shadow:
+        0 0 0 2px
+        rgba(25, 199, 239, 0.08);
+    }
+
+
+    .hint {
+
+      margin-top: 7px;
+
+      color: #7f8ea1;
+
+      font-size: 12px;
+    }
+
+
+    /* =========================
+       BUTTON
+    ========================= */
+
+    .submit {
+
+      width: 100%;
+
+      min-height: 56px;
+
+      margin-top: 5px;
+
+      border: 0;
+
+      border-radius: 999px;
+
+      cursor: pointer;
+
+      background:
+        linear-gradient(
+          90deg,
+          #10bde8,
+          #1598c2
+        );
+
+      color: white;
+
+      font-size: 17px;
+
+      font-weight: 900;
+
+      box-shadow:
+        0 8px 25px
+        rgba(25, 199, 239, 0.22);
+
+      transition: 0.2s;
+    }
+
+
+    .submit:hover {
+
+      transform: translateY(-1px);
+
+      box-shadow:
+        0 10px 30px
+        rgba(25, 199, 239, 0.28);
+    }
+
+
+    .submit:active {
+
+      transform: scale(0.99);
+    }
+
+
+    /* =========================
+       ERROR / SUCCESS
+    ========================= */
+
+    .error,
+    .success {
+
+      display: none;
+
+      margin-top: 5px;
+
+      padding: 14px;
+
+      border-radius: 10px;
+
+      font-size: 14px;
+
+      line-height: 1.5;
+    }
+
+
+    .error {
+
+      background:
+        rgba(255, 80, 80, 0.08);
+
+      border:
+        1px solid
+        rgba(255, 80, 80, 0.25);
+
+      color: #ffb7b7;
+    }
+
+
+    .success {
+
+      background:
+        rgba(25, 199, 239, 0.08);
+
+      border:
+        1px solid
+        rgba(25, 199, 239, 0.25);
+
+      color: #b9effb;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .footer {
+
+      text-align: center;
+
+      margin-top: 22px;
+
+      color: #657489;
+
+      font-size: 12px;
+
+      line-height: 1.5;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 700px) {
+
+      .page {
+
+        padding:
+          25px
+          14px
+          42px;
+      }
+
+
+      .brand {
+
+        margin-bottom: 22px;
+      }
+
+
+      .subtitle {
+
+        font-size: 16px;
+
+        line-height: 1.6;
+      }
+
+
+      .proofs {
+
+        grid-template-columns: 1fr;
+
+        gap: 9px;
+      }
+
+
+      .proof {
+
+        padding: 13px;
+      }
+
+
+      .section {
+
+        margin-top: 26px;
+
+        padding:
+          21px
+          16px;
+
+        border-radius: 15px;
+      }
+
+
+      .section-title {
+
+        font-size: 22px;
+      }
+
+
+      .tiers {
+
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+
+      .tier {
+
+        padding:
+          15px
+          9px;
+      }
+
+
+      .tier .bonus {
+
+        font-size: 19px;
+      }
+    }
+
+
+    @media (max-width: 380px) {
+
+      h1 {
+
+        font-size: 36px;
+
+        letter-spacing: -1.5px;
+      }
+
+
+      .tiers {
+
+        gap: 8px;
+      }
+
+
+      .tier .qty {
+
+        font-size: 13px;
+      }
+
+
+      .tier .bonus {
+
+        font-size: 17px;
+      }
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+<div class="page">
+
+
+  <!-- =========================
+       BRAND
+  ========================= -->
+
+  <div class="brand">
+
+    FACTORY DIRECT
+
+    <br>
+
+    <span>WHOLESALE PARTNERS</span>
+
+  </div>
+
+
+
+  <!-- =========================
+       HERO
+  ========================= -->
+
+  <section class="hero">
+
+    <div class="eyebrow">
+
+      DIRECT FROM MANUFACTURER
+
+    </div>
+
+
+    <h1>
+
+      FACTORY PRICE
+
+      <br>
+
+      <span>WHOLESALE</span>
+
+    </h1>
+
+
+    <p class="subtitle">
+
+      We are looking for wholesale partners,
+      distributors, dealers and long-term business partners.
+
+      <br>
+
+      Orders are supplied directly from the factory.
+
+    </p>
+
+
+
+    <div class="proofs">
+
+
+      <div class="proof">
+
+        <strong>
+          FACTORY DIRECT
+        </strong>
+
+        Direct wholesale supply
+
+      </div>
+
+
+      <div class="proof">
+
+        <strong>
+          8+ UNITS
+        </strong>
+
+        Wholesale orders only
+
+      </div>
+
+
+      <div class="proof">
+
+        <strong>
+          GLOBAL PARTNERS
+        </strong>
+
+        Long-term cooperation
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       INCENTIVE
+  ========================= -->
+
+  <section class="section">
+
+
+    <h2 class="section-title">
+
+      WHOLESALE PARTNER INCENTIVES
+
+    </h2>
+
+
+    <p class="section-desc">
+
+      The larger your order,
+      the more additional product value you receive.
+
+    </p>
+
+
+
+    <div class="tiers">
+
+
+      <div class="tier">
+
+        <div class="qty">
+
+          8–500
+
+        </div>
+
+        <div class="bonus">
+
+          +10%
+
+        </div>
+
+      </div>
+
+
+
+      <div class="tier">
+
+        <div class="qty">
+
+          500–2,000
+
+        </div>
+
+        <div class="bonus">
+
+          +20%
+
+        </div>
+
+      </div>
+
+
+
+      <div class="tier">
+
+        <div class="qty">
+
+          2,000–5,000
+
+        </div>
+
+        <div class="bonus">
+
+          +30%
+
+        </div>
+
+      </div>
+
+
+
+      <div class="tier">
+
+        <div class="qty">
+
+          5,000+
+
+        </div>
+
+        <div class="bonus">
+
+          +40%
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="example">
+
+      <strong>Example:</strong>
+
+      If you purchase products worth 1,000,
+      you receive products worth a total of 1,200.
+
+      You may choose to receive the additional 200
+      in the current order or use it as credit
+      toward a future order.
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- =========================
+       FORM
+  ========================= -->
+
+  <section class="section form-section">
+
+
+    <h2 class="section-title">
+
+      BECOME A WHOLESALE PARTNER
+
+    </h2>
+
+
+    <p class="section-desc">
+
+      Complete the form below to contact our team.
+      Wholesale buyers, distributors and dealers only.
+
+    </p>
+
+
+
+    <form id="partnerForm">
+
+
+      <!-- Buyer Type -->
+
+      <div>
+
+        <label for="buyerType">
+
+          Buyer Type
+
+        </label>
+
+
+        <select
+          id="buyerType"
+          required
+        >
+
+          <option value="">
+
+            Select buyer type
+
+          </option>
+
+
+          <option value="Wholesale">
+
+            Wholesale
+
+          </option>
+
+
+          <option value="Retail">
+
+            Retail
+
+          </option>
+
+        </select>
+
+      </div>
+
+
+
+      <!-- Quantity -->
+
+      <div>
+
+        <label for="quantity">
+
+          Purchase Quantity
+
+        </label>
+
+
+        <input
+          id="quantity"
+          type="number"
+          min="8"
+          step="1"
+          placeholder="Minimum 8 units"
+          required
+        >
+
+
+        <div class="hint">
+
+          Wholesale orders start from 8 units.
+
+        </div>
+
+      </div>
+
+
+
+      <!-- Email -->
+
+      <div>
+
+        <label for="email">
+
+          Email Address
+
+        </label>
+
+
+        <input
+          id="email"
+          type="email"
+          placeholder="Your email address"
+          required
+        >
+
+      </div>
+
+
+
+      <!-- Phone -->
+
+      <div>
+
+        <label for="phone">
+
+          Phone Number
+
+        </label>
+
+
+        <input
+          id="phone"
+          type="tel"
+          placeholder="Your phone number"
+          required
+        >
+
+      </div>
+
+
+
+      <!-- Name -->
+
+      <div>
+
+        <label for="name">
+
+          Your Name
+
+        </label>
+
+
+        <input
+          id="name"
+          type="text"
+          placeholder="Your name"
+          required
+        >
+
+      </div>
+
+
+
+      <!-- Error -->
+
+      <div
+        id="errorBox"
+        class="error"
+      ></div>
+
+
+
+      <!-- Success -->
+
+      <div
+        id="successBox"
+        class="success"
+      ></div>
+
+
+
+      <!-- Contact -->
+
+      <button
+        type="submit"
+        class="submit"
+      >
+
+        CONTACT US
+
+      </button>
+
+
+    </form>
+
+
+  </section>
+
+
+
+  <div class="footer">
+
+    Wholesale inquiries only ·
+    Factory direct ·
+    Distributor & dealer partnerships
+
+  </div>
+
+
+</div>
+
+
+
+<script>
+
+
+  /*
+  ============================================================
+  CONTACT LINK
+  ============================================================
+
+  这里使用你之前提供的中转链接。
+
+  客户提交符合条件的资料以后，
+  系统会自动把资料整理成一段文字，
+  然后通过 ?text= 参数附加到这个链接。
+
+  如果你的最终客服系统支持预填文字，
+  就可以直接显示在对话框中。
+
+  ============================================================
+  */
+
+
+  const CONTACT_URL =
+    "https://svip1027.top/56FKJHJHK";
+
+
+
+  /*
+  ============================================================
+  FORM
+  ============================================================
+  */
+
+
+  const form =
+    document.getElementById(
+      "partnerForm"
+    );
+
+
+  const errorBox =
+    document.getElementById(
+      "errorBox"
+    );
+
+
+  const successBox =
+    document.getElementById(
+      "successBox"
+    );
+
+
+
+  form.addEventListener(
+    "submit",
+    function(event) {
+
+
+      event.preventDefault();
+
+
+      errorBox.style.display =
+        "none";
+
+
+      successBox.style.display =
+        "none";
+
+
+
+      /*
+      获取客户填写的信息
+      */
+
+
+      const buyerType =
+        document.getElementById(
+          "buyerType"
+        ).value;
+
+
+      const quantity =
+        Number(
+          document.getElementById(
+            "quantity"
+          ).value
+        );
+
+
+      const email =
+        document.getElementById(
+          "email"
+        ).value.trim();
+
+
+      const phone =
+        document.getElementById(
+          "phone"
+        ).value.trim();
+
+
+      const name =
+        document.getElementById(
+          "name"
+        ).value.trim();
+
+
+
+      /*
+      ==========================================================
+      条件 1
+      只接受批发
+      ==========================================================
+      */
+
+
+      if (
+        buyerType !==
+        "Wholesale"
+      ) {
+
+        errorBox.textContent =
+          "Thank you for your interest. We currently accept wholesale inquiries only.";
+
+        errorBox.style.display =
+          "block";
+
+        return;
+      }
+
+
+
+      /*
+      ==========================================================
+      条件 2
+      最低 8 个
+      ==========================================================
+      */
+
+
+      if (
+        !Number.isFinite(quantity) ||
+        quantity < 8
+      ) {
+
+        errorBox.textContent =
+          "Wholesale orders require a minimum purchase quantity of 8 units.";
+
+        errorBox.style.display =
+          "block";
+
+        return;
+      }
+
+
+
+      /*
+      ==========================================================
+      条件 3
+      所有资料必须填写
+      ==========================================================
+      */
+
+
+      if (
+        !email ||
+        !phone ||
+        !name
+      ) {
+
+        errorBox.textContent =
+          "Please complete all required fields before contacting us.";
+
+        errorBox.style.display =
+          "block";
+
+        return;
+      }
+
+
+
+      /*
+      ==========================================================
+      生成给客服的预填消息
+      ==========================================================
+      */
+
+
+      const message =
+
+`Hello, I would like to make a wholesale inquiry.
+
+Name: ${name}
+Buyer Type: ${buyerType}
+Purchase Quantity: ${quantity} units
+Email: ${email}
+Phone: ${phone}
+
+I am interested in working with your factory as a wholesale buyer, distributor or dealer.`;
+
+
+
+      /*
+      ==========================================================
+      把客户资料加入链接
+      ==========================================================
+      */
+
+
+      const separator =
+        CONTACT_URL.includes("?")
+          ? "&"
+          : "?";
+
+
+      const finalURL =
+        CONTACT_URL +
+        separator +
+        "text=" +
+        encodeURIComponent(
+          message
+        );
+
+
+
+      /*
+      ==========================================================
+      提示客户正在进入客服
+      ==========================================================
+      */
+
+
+      successBox.textContent =
+        "Your information has been prepared. Opening the customer service chat...";
+
+
+      successBox.style.display =
+        "block";
+
+
+
+      /*
+      稍微停顿一下，
+      然后打开客服链接
+      */
+
+
+      setTimeout(
+        function() {
+
+          window.location.href =
+            finalURL;
+
+        },
+        500
+      );
+
+
+    }
+  );
+
+</script>
+
+
+</body>
+</html>
